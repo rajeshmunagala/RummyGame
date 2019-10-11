@@ -1,5 +1,4 @@
 import { Mediator } from "@robotlegsjs/pixi";
-
 import { SmileyView } from "../view/SmileyView";
 
 export class SmileyMediator extends Mediator<SmileyView> {

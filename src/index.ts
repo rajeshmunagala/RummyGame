@@ -195,11 +195,12 @@
 
 // let game: Game = new Game();
 
+/// <reference path="../definitions\pixi.d.ts" />
 import "reflect-metadata";
 import { Game } from "./Game";
 
-let game: Game = new Game();
-// (<any>window).initGame = () => {
-//     let game: Game = new Game();
-//     (<any>window).game = game;
-// };
+//let game: Game = new Game();
+(<any>window).initGame = () => {
+    let game: Game = new Game();
+    (<any>window).game = game;
+};

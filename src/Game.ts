@@ -14,6 +14,9 @@ export class Game {
     private context: Context;
     private width = 1280;
     private height = 720;
+    private robotLogo: RobotlegsView;
+    
+
 
     constructor() {
         this.canvas = <HTMLCanvasElement>document.getElementById("canvas");
@@ -26,10 +29,13 @@ export class Game {
             .configure(new ContextView(this.stage))
             .configure(GameConfig)
             .initialize();
-
         this.stage.addChild(new RobotlegsView());
         this.stage.addChild(new CardsTexture());
+
+        
+    
         this.app.autoResize = true;
+        
         
 
         document.body.appendChild(this.app.view);

@@ -2,7 +2,6 @@ import "reflect-metadata";
 import { Mediator } from "@robotlegsjs/pixi";
 import { RobotlegsView } from "../view/RobotlegsView";
 import { SmileyView } from "../view/SmileyView";
-import { EventEmitter } from "eventemitter3"
 
 export class RobotlegsMediator extends Mediator<RobotlegsView> {
     public initialize(): void {

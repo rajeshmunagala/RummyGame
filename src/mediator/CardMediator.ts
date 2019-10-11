@@ -1,6 +1,5 @@
 
 import { Mediator } from "@robotlegsjs/pixi";
-
 import { Card } from './../view/Card';
 
 export class CardMediator extends Mediator<Card> {
