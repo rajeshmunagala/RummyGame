@@ -17,6 +17,10 @@ export class FlowService {
     public setOptionsView(): void {
         this.dispatchEventWith(FlowEvent.SHOW_OPTIONS_VIEW);
     }
+
+    public setpracticePlayerTableView(): void {
+        this.dispatchEventWith(FlowEvent.SHOW_PRACTICE_GAME_PLAYER_TABLE);
+    }
     // Floating Views
     public showGameOverPopup(): void {
         this.dispatchEventWith(FlowEvent.SHOW_GAME_OVER_POPUP);

@@ -27,6 +27,7 @@ export class OptionsView extends Container {
     }
     private setupBackground(): void {
         this.addChild(PixiFactory.getColorBackground());
+ //       this.addChild(PixiFactory.getBackgroundImage());
     }
     private setupButtons(): void {
         this._homeButton = PixiFactory.getButton(AtlasKeys.BUTTON_HOME);

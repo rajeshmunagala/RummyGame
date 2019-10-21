@@ -2,6 +2,7 @@ import { IConfig, inject, injectable } from "@robotlegsjs/core";
 import { IMediatorMap } from "@robotlegsjs/pixi";
 
 import { GameOverPopupMediator } from "./../mediators/GameOverPopupMediator";
+import { PlayerTableViewMediator } from './../mediators/PlayerTableViewMediator';
 import { GameViewMediator } from "./../mediators/GameViewMediator";
 import { GridComponentMediator } from "./../mediators/GridComponentMediator";
 import { HomeViewMediator } from "./../mediators/HomeViewMediator";
@@ -22,9 +23,11 @@ import { HomeView } from "./../views/HomeView";
 import { InfoPopup } from "./../views/InfoPopup";
 import { IntroView } from "./../views/IntroView";
 import { OptionsView } from "./../views/OptionsView";
+import { PlayerTableView } from './../views/PlayerTableView';
 import { PausePopup } from "./../views/PausePopup";
 import { ResetConfirmPopup } from "./../views/ResetConfirmPopup";
 import { StartingPopup } from "./../views/StartingPopup";
+
 
 @injectable()
 export class ViewsConfig implements IConfig {
@@ -38,6 +41,7 @@ export class ViewsConfig implements IConfig {
         this.mediatorMap.map(HomeView).toMediator(HomeViewMediator);
         this.mediatorMap.map(IntroView).toMediator(IntroViewMediator);
         this.mediatorMap.map(OptionsView).toMediator(OptionsViewMediator);
+        this.mediatorMap.map(PlayerTableView).toMediator(PlayerTableViewMediator);
 
         this.mediatorMap.map(GridComponent).toMediator(GridComponentMediator);
         this.mediatorMap.map(HUDGameComponent).toMediator(HUDGameComponentMediator);

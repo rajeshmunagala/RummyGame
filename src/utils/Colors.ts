@@ -8,4 +8,6 @@ export class Colors {
     public static GAME_ITEMS = 0xb5d6e6;
 
     public static TEXTCOLOR_ONE = 0xffffff;
+    public static TEXTCOLOR_TWO = 0x000000;
+    public static TEXTCOLOR_YELLOW = 0xf5ba2f;
 }

@@ -11,9 +11,18 @@ export class AtlasKeys {
     public static BUTTON_RETRY = "button_retry";
     public static BUTTON_START = "button_start";
 
-    public static BUTTON_CASH_GMAE = "button_chashgame";
+    public static BUTTON_CASH_GMAE = "button_cashgame";
     public static BUTTON_TOURNAMENT = "button_tournament";
-    public static BUTTON_PRACTICE = "button_practice"
+    public static BUTTON_PRACTICE = "button_practice";
+    public static BUTTON_PLAY_NOW = "./assets/pay_now.png";
+    public static KING_ICON = "icon_addcash";
+    public static BONUS_ICON = "icon_bonus";
+
+    public static POINTS_CARD = "card_points.png";
+    public static POOL_CARD = "card_pool.png";
+    public static DEAL_CARD = "card_deals.png";
+
+
 
     public static LOGO = "logo_tetris.png";
     public static LOGO_SETZER = "logo_setzer.png";
@@ -38,8 +47,8 @@ export class AtlasKeys {
     public static ATLAS_XML = "./assets/tetris-pixijs-atlas.json";
     public static ATLAS_PNG = "./assets/tetris-pixijs-atlas.png";
 
-    public static ATLAS_TEST = "./assets/datafiles.json";
-    public static ATLAS_TestPNG = "./assets/texture.png";
+    public static ATLAS_RGJ = "./assets/homeimages.json";
+    public static ATLAS_RGP= "./assets/homeimages.png";
 
     private static resources: any;
     private static textureCache: any;

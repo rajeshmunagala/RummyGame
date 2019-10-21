@@ -1,0 +1,140 @@
+{"frames": {
+
+"button_cashgame_up.png":
+{
+	"frame": {"x":1443,"y":1,"w":328,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":328,"h":130},
+	"sourceSize": {"w":328,"h":130}
+},
+"button_cashgame_over.png":
+{
+	"frame": {"x":1443,"y":1,"w":328,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":328,"h":130},
+	"sourceSize": {"w":328,"h":130}
+},
+"button_practice_up.png":
+{
+	"frame": {"x":1443,"y":133,"w":328,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":328,"h":130},
+	"sourceSize": {"w":328,"h":130}
+},
+"button_practice_over.png":
+{
+	"frame": {"x":1443,"y":133,"w":328,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":328,"h":130},
+	"sourceSize": {"w":328,"h":130}
+},
+"button_tournament_up.png":
+{
+	"frame": {"x":1443,"y":265,"w":328,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":328,"h":130},
+	"sourceSize": {"w":328,"h":130}
+},
+"button_tournament_over.png":
+{
+	"frame": {"x":1443,"y":265,"w":328,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":328,"h":130},
+	"sourceSize": {"w":328,"h":130}
+},
+"card_deals.png":
+{
+	"frame": {"x":1,"y":1329,"w":400,"h":570},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":570},
+	"sourceSize": {"w":400,"h":570}
+},
+"card_points.png":
+{
+	"frame": {"x":698,"y":729,"w":400,"h":570},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":570},
+	"sourceSize": {"w":400,"h":570}
+},
+"card_pool.png":
+{
+	"frame": {"x":1100,"y":615,"w":400,"h":570},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":570},
+	"sourceSize": {"w":400,"h":570}
+},
+"cards.png":
+{
+	"frame": {"x":1230,"y":1187,"w":550,"h":541},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":6,"w":550,"h":541},
+	"sourceSize": {"w":560,"h":553}
+},
+"cards_coins.png":
+{
+	"frame": {"x":698,"y":1301,"w":530,"h":464},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":530,"h":464},
+	"sourceSize": {"w":530,"h":471}
+},
+"icon_addcash.png":
+{
+	"frame": {"x":816,"y":1,"w":625,"h":612},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":625,"h":612},
+	"sourceSize": {"w":625,"h":612}
+},
+"icon_bonus.png":
+{
+	"frame": {"x":573,"y":1329,"w":104,"h":104},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":104},
+	"sourceSize": {"w":104,"h":104}
+},
+"icon_funcoins.png":
+{
+	"frame": {"x":816,"y":615,"w":103,"h":103},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":103,"h":103},
+	"sourceSize": {"w":103,"h":103}
+},
+"icon_pointgame.png":
+{
+	"frame": {"x":1,"y":729,"w":695,"h":598},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":695,"h":598},
+	"sourceSize": {"w":695,"h":598}
+},
+"icon_poitsbar.png":
+{
+	"frame": {"x":1,"y":1,"w":813,"h":726},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":813,"h":726},
+	"sourceSize": {"w":813,"h":738}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "homeimages.png",
+	"format": "RGBA8888",
+	"size": {"w":1772,"h":1766},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c6c1b0f6a21ec8fa4bd68f37d3720ef6:37c1d83ddf027d5ec367144517968b65:30afd9431027bffdbf0ec2b4b13e4801$"
+}
+}

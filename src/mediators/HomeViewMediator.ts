@@ -11,6 +11,7 @@ export class HomeViewMediator extends Mediator<HomeView> {
     public initialize(): void {
         this.eventMap.mapListener(this.view.startButton, "click", this.startButton_onClick, this);
         this.eventMap.mapListener(this.view.optionButton, "click", this.optionsButton_onClick, this);
+        this.eventMap.mapListener(this.view.practiceGame, "click", this.practiceGameButton_onClick, this);
     }
     public destroy(): void {
         this.eventMap.unmapListeners();
@@ -20,5 +21,9 @@ export class HomeViewMediator extends Mediator<HomeView> {
     }
     private optionsButton_onClick(e: any): void {
         this.flowService.setOptionsView();
+    }
+
+    private practiceGameButton_onClick (e: any): void {
+        this.flowService.setpracticePlayerTableView();
     }
 }

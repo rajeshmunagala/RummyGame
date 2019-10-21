@@ -10,6 +10,7 @@ import { InfoPopup } from "./../views/InfoPopup";
 import { IntroView } from "./../views/IntroView";
 import { OptionsView } from "./../views/OptionsView";
 import { PausePopup } from "./../views/PausePopup";
+import { PlayerTableView } from './../views/PlayerTableView';
 import { ResetConfirmPopup } from "./../views/ResetConfirmPopup";
 import { StartingPopup } from "./../views/StartingPopup";
 
@@ -33,6 +34,7 @@ export class PalidorConfig implements IConfig {
         this.flowManager.map(FlowEvent.SHOW_HOME_VIEW).toView(HomeView);
         this.flowManager.map(FlowEvent.SHOW_INTRO_VIEW).toView(IntroView);
         this.flowManager.map(FlowEvent.SHOW_OPTIONS_VIEW).toView(OptionsView);
+        this.flowManager.map(FlowEvent.SHOW_PRACTICE_GAME_PLAYER_TABLE).toView(PlayerTableView);
 
         this.flowManager.map(FlowEvent.SHOW_GAME_OVER_POPUP).toFloatingView(GameOverPopup);
         this.flowManager.map(FlowEvent.SHOW_INFO_POPUP).toFloatingView(InfoPopup);

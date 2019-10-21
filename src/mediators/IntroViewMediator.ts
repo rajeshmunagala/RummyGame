@@ -15,6 +15,8 @@ export class IntroViewMediator extends Mediator<IntroView> {
         const loader = PIXI.loader
             .add(AtlasKeys.ATLAS_PNG)
             .add(AtlasKeys.ATLAS_XML)
+            .add(AtlasKeys.ATLAS_RGP)
+            .add(AtlasKeys.ATLAS_RGJ)
             .load(this.onLoad);
     }
     public destroy(): void {

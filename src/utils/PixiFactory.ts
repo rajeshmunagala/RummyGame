@@ -1,6 +1,7 @@
 import { Container, Graphics, Sprite, Text, Texture } from "pixi.js";
 
 import { CustomButton } from "./../views/components/CustomButton";
+import { CustomIcon } from './../views/components/CustomIcon';
 import { TileDisplay } from "./../views/components/TileDisplay";
 import { AtlasKeys } from "./AtlasKeys";
 import { Colors } from "./Colors";
@@ -36,6 +37,9 @@ export class PixiFactory {
     }
     public static getButton(atlasKey: string): CustomButton {
         return new CustomButton(atlasKey);
+    }
+    public static getIcon(atlasKey: string): CustomIcon {
+        return new CustomIcon(atlasKey);
     }
     public static getColorBox(width: number, heigth: number, color = 0x00000): Graphics {
         const background: Graphics = new Graphics();

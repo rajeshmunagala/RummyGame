@@ -6,6 +6,8 @@ export class FlowEvent extends Event {
     public static SHOW_INTRO_VIEW = "showIntroView";
     public static SHOW_OPTIONS_VIEW = "showOptionsView";
 
+    public static  SHOW_PRACTICE_GAME_PLAYER_TABLE = "showPlayerTableView";
+
     public static SHOW_GAME_OVER_POPUP = "showGameOverPopup";
     public static SHOW_INFO_POPUP = "showInfoPopup";
     public static SHOW_PAUSE_POPUP = "showPausePopup";
