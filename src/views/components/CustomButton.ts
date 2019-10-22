@@ -13,11 +13,11 @@ export class CustomButton extends Sprite {
     constructor(atlasKey: string) {
         super(AtlasKeys.getTexture(atlasKey + "_up.png"));
 
-        const downStateTexture: Texture = AtlasKeys.getTexture(atlasKey + "_over.png");
+        //const downStateTexture: Texture = AtlasKeys.getTexture(atlasKey + "_over.png");
         const upStateTexture: Texture = AtlasKeys.getTexture(atlasKey + "_up.png");
 
-        this._downState = downStateTexture;
-        this._overState = downStateTexture;
+        // this._downState = downStateTexture;
+        // this._overState = downStateTexture;
         this._upState = upStateTexture;
 
         this.setInitialValues();
@@ -37,24 +37,24 @@ export class CustomButton extends Sprite {
     }
     private onButtonDown(): void {
         this._isDown = true;
-        this.texture = this._downState;
-        this.scale.set(0.95, 0.95);
+        //this.texture = this._downState;
+        //this.scale.set(0.95, 0.95);
     }
     private onButtonOut(): void {
         this._isOver = false;
         this.texture = this._upState;
-        this.scale.set(1, 1);
+        //this.scale.set(1, 1);
     }
     private onButtonOver(): void {
         this._isOver = true;
-        this.texture = this._overState;
+        //this.texture = this._overState;
     }
     private onButtonUp(): void {
         this._isDown = false;
-        this.scale.set(1, 1);
+        //this.scale.set(1, 1);
 
         if (this._isOver) {
-            this.texture = this._overState;
+            this.texture = this._upState;
         } else {
             this.texture = this._upState;
         }

@@ -14,9 +14,12 @@ export class AtlasKeys {
     public static BUTTON_CASH_GMAE = "button_cashgame";
     public static BUTTON_TOURNAMENT = "button_tournament";
     public static BUTTON_PRACTICE = "button_practice";
-    public static BUTTON_PLAY_NOW = "./assets/pay_now.png";
-    public static KING_ICON = "icon_addcash";
+    public static BUTTON_PLAY_NOW = "play_now";
+    public static BUTTON_WIN_PRIZE = "winprize";
+    public static KING_ICON = "user_icon";
     public static BONUS_ICON = "icon_bonus";
+    public static FUN_ICON = "fun_coins";
+    public static ADDCASH_ICON = "add-cash";
 
     public static POINTS_CARD = "card_points.png";
     public static POOL_CARD = "card_pool.png";
@@ -49,6 +52,10 @@ export class AtlasKeys {
 
     public static ATLAS_RGJ = "./assets/homeimages.json";
     public static ATLAS_RGP= "./assets/homeimages.png";
+
+    public static ATLAS_ICONBJ = "./assets/iconsimage.json";
+    public static ATLAS_ICONBP= "./assets/iconsimage.png";
+
 
     private static resources: any;
     private static textureCache: any;

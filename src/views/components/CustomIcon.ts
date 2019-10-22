@@ -17,8 +17,8 @@ export class CustomIcon extends Sprite {
         const upStateTexture: Texture = AtlasKeys.getTexture(atlasKey + ".png");
 
         this._downState = downStateTexture;
-        this._overState = downStateTexture;
-        this._upState = upStateTexture;
+       // this._overState = downStateTexture;
+       // this._upState = upStateTexture;
 
         this.setInitialValues();
         this.setupInteractions();
@@ -29,34 +29,36 @@ export class CustomIcon extends Sprite {
         this.buttonMode = true;
     }
     private setupInteractions(): void {
-        this.on("pointerup", this.onButtonUp);
-        this.on("pointerupoutside", this.onButtonUp);
-        this.on("pointerdown", this.onButtonDown);
-        this.on("pointerover", this.onButtonOver);
-        this.on("pointerout", this.onButtonOut);
+        this.on("pointerup", this.onIconUp);
+        this.on("pointerupoutside", this.onIconUp);
+        this.on("pointerdown", this.onIconDown);
+        //this.on("pointerover", this.onIconOver);
+        this.on("pointerout", this.onIconOut);
     }
-    private onButtonDown(): void {
+    private onIconDown(): void {
         this._isDown = true;
         this.texture = this._downState;
-        this.scale.set(0.95, 0.95);
+        //this.scale.set(0.95, 0.95);
     }
-    private onButtonOut(): void {
+    private onIconOut(): void {
         this._isOver = false;
-        this.texture = this._upState;
-        this.scale.set(1, 1);
+        this.texture = this._downState;
+        //this.scale.set(1, 1);
     }
-    private onButtonOver(): void {
+    private onIconOver(): void {
         this._isOver = true;
-        this.texture = this._overState;
+        this.texture = this._downState;
     }
-    private onButtonUp(): void {
+    private onIconUp(): void {
         this._isDown = false;
-        this.scale.set(1, 1);
+        //this.scale.set(0, 0);
 
         if (this._isOver) {
-            this.texture = this._overState;
+            this.texture = this._downState;
+           // this.scale.set(0.5);
         } else {
-            this.texture = this._upState;
+            this.texture = this._downState;
+            //this.scale.set(0.5);
         }
     }
 }

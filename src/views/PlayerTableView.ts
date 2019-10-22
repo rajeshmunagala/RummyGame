@@ -18,6 +18,11 @@ export class PlayerTableView extends Container {
         return this._resetButton;
     }
 
+    private _playNowButton: CustomButton;
+    public get playNowButton(): CustomButton {
+        return this._playNowButton;
+    }
+
     constructor() {
         super();
 
@@ -55,26 +60,31 @@ export class PlayerTableView extends Container {
     private setupPlayerTable(): void {
         const tableHeaderBg: Graphics = new Graphics();
         tableHeaderBg.beginFill(0x220b36);
-        tableHeaderBg.drawRoundedRect(120, 70, ViewPortSize.MAX_WIDTH * 0.8, 60, 16);
+        tableHeaderBg.drawRoundedRect(ViewPortSize.MAX_WIDTH * 0.15, 70, ViewPortSize.MAX_WIDTH * 0.7, 60, 16);
         tableHeaderBg.endFill();
         this.addChild(tableHeaderBg);
 
-        const playNowButton: Sprite = PixiFactory.getImage(AtlasKeys.BUTTON_PLAY_NOW);
-        playNowButton.anchor.set(0.5);
-        playNowButton.x = 70;
-        playNowButton.y = 75;
-        this.addChild(playNowButton);
+        // const playNowButton: Sprite = PixiFactory.getImage(AtlasKeys.BUTTON_PLAY_NOW);
+        // playNowButton.anchor.set(0.5);
+        // playNowButton.x = 70;
+        // playNowButton.y = 75;
+        //this.addChild(playNowButton);
+        this._playNowButton = PixiFactory.getButton(AtlasKeys.BUTTON_PLAY_NOW);
+        this._playNowButton.scale.set(0.7);
+        this._playNowButton.x = 300;
+        this._playNowButton.y = 100;
+        this.addChild(this._playNowButton);
 
-        const playNowButtonTwo: Graphics = new Graphics();
-        playNowButtonTwo.beginFill(0xc59031);
-        playNowButtonTwo.drawRoundedRect(140, 80, 200, 40, 10);
-        playNowButtonTwo.endFill();
-        this.addChild(playNowButtonTwo);
+        // const playNowButtonTwo: Graphics = new Graphics();
+        // playNowButtonTwo.beginFill(0xc59031);
+        // playNowButtonTwo.drawRoundedRect(140, 80, 200, 40, 10);
+        // playNowButtonTwo.endFill();
+        // this.addChild(playNowButtonTwo);
 
-        const playNowText: Text = PixiFactory.getText(Texts.PLAY_NOW, Colors.TEXTCOLOR_TWO, Texts.FONT_SIZE_DEFAULT);
-        playNowText.x = 180;
-        playNowText.y = 90;
-        this.addChild(playNowText);
+        // const playNowText: Text = PixiFactory.getText(Texts.PLAY_NOW, Colors.TEXTCOLOR_TWO, Texts.FONT_SIZE_DEFAULT);
+        // playNowText.x = 180;
+        // playNowText.y = 90;
+        // this.addChild(playNowText);
 
         const myAccountText: Text = PixiFactory.getText(Texts.MY_ACCOUNT, Colors.TEXTCOLOR_ONE, Texts.FONT_SIZE_DEFAULT);
         myAccountText.x = 450;
@@ -142,11 +152,18 @@ export class PlayerTableView extends Container {
         tableRowBg.drawRoundedRect(220, 250, ViewPortSize.MAX_WIDTH * 0.7, 80, 16);
         tableRowBg.endFill();
         this.addChild(tableRowBg);
+
         let playButton: Sprite = PIXI.Sprite.fromImage(AtlasKeys.BUTTON_PLAY_NOW);
         playButton.scale.set(0.5);
-        playButton.x = 1080;
-        playButton.y = 280;
+        playButton.x = (ViewPortSize.MAX_WIDTH * 0.7) * 1.07;
+        playButton.y = ViewPortSize.MAX_HEIGHT * 0.37;;
         this.addChild(playButton);
+
+        let playButtonTwo: Sprite = PIXI.Sprite.fromImage(AtlasKeys.BUTTON_PLAY_NOW);
+        playButtonTwo.scale.set(0.5);
+        playButtonTwo.x = (ViewPortSize.MAX_WIDTH * 0.7) * 1.07;
+        playButtonTwo.y = ViewPortSize.MAX_HEIGHT * 0.5;
+        this.addChild(playButtonTwo);
 
 
         const tableRowBgTwo: Graphics = new Graphics();
@@ -155,6 +172,17 @@ export class PlayerTableView extends Container {
         tableRowBgTwo.endFill();
         this.addChild(tableRowBgTwo);
 
+        let playButtonThree: Sprite = PIXI.Sprite.fromImage(AtlasKeys.BUTTON_PLAY_NOW);
+        playButtonThree.scale.set(0.5);
+        playButtonThree.x = (ViewPortSize.MAX_WIDTH * 0.7) * 1.07;
+        playButtonThree.y = ViewPortSize.MAX_HEIGHT * 0.63;
+        this.addChild(playButtonThree);
+
+        let playButtonFoure: Sprite = PIXI.Sprite.fromImage(AtlasKeys.BUTTON_PLAY_NOW);
+        playButtonFoure.scale.set(0.5);
+        playButtonFoure.x = (ViewPortSize.MAX_WIDTH * 0.7) * 1.07;
+        playButtonFoure.y = ViewPortSize.MAX_HEIGHT * 0.77;
+        this.addChild(playButtonFoure);
 
        
         

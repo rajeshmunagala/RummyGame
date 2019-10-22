@@ -17,6 +17,8 @@ export class IntroViewMediator extends Mediator<IntroView> {
             .add(AtlasKeys.ATLAS_XML)
             .add(AtlasKeys.ATLAS_RGP)
             .add(AtlasKeys.ATLAS_RGJ)
+            .add(AtlasKeys.ATLAS_ICONBJ)
+            .add(AtlasKeys.ATLAS_ICONBP)
             .load(this.onLoad);
     }
     public destroy(): void {

@@ -32,9 +32,21 @@ export class HomeView extends Container {
     public get kingIcon (): CustomIcon {
         return this._kingIcon;
     }
+    private _addCashIcon: CustomIcon;
+    public get addCashIcon (): CustomIcon {
+        return this._addCashIcon;
+    }
+    private _funIcon: CustomIcon;
+    public get funIcon (): CustomIcon {
+        return this._funIcon;
+    }
     private _bonusIcon: CustomIcon;
     public get bonusIcon (): CustomIcon {
         return this._bonusIcon;
+    }
+    private _winPrize: CustomButton;
+    public get winPrize (): CustomButton {
+        return this._winPrize;
     }
 
     constructor() {
@@ -50,49 +62,40 @@ export class HomeView extends Container {
         this.addChild(PixiFactory.getBackgroundImage());
     }
     private setupImages(): void {
-        // const logo: Sprite = PixiFactory.getImage(AtlasKeys.LOGO);
-        // logo.anchor.set(0.5);
-        // logo.x = ViewPortSize.HALF_WIDTH;
-        // logo.y = ViewPortSize.MAX_HEIGHT * 0.3;
-        // this.addChild(logo);
-
-        const setzer: Sprite = PixiFactory.getImage(AtlasKeys.LOGO_SETZER);
-        setzer.anchor.set(0.5);
-        setzer.x = 10;
-        setzer.y = ViewPortSize.MAX_HEIGHT - 15;
-        //this.addChild(setzer);
-
+        
         const pointsCard: Sprite = PixiFactory.getImage(AtlasKeys.DEAL_CARD);
         pointsCard.anchor.set(0.5);
-        pointsCard.x = ViewPortSize.HALF_WIDTH - ViewPortSize.HALF_WIDTH / 2 ;
+        pointsCard.x = ViewPortSize.HALF_WIDTH - ViewPortSize.HALF_WIDTH / 2 + 40 ;
         pointsCard.y =  ViewPortSize.MAX_HEIGHT * 0.55;
         pointsCard.scale.set(0.7);
         this.addChild(pointsCard);
 
         const poolCard: Sprite = PixiFactory.getImage(AtlasKeys.POOL_CARD);
         poolCard.anchor.set(0.5);
-        poolCard.x = ViewPortSize.HALF_WIDTH;
+        poolCard.x = ViewPortSize.HALF_WIDTH + 40;
         poolCard.y =  ViewPortSize.MAX_HEIGHT * 0.55;
         poolCard.scale.set(0.7);
         this.addChild(poolCard);
 
         const dealCard: Sprite = PixiFactory.getImage(AtlasKeys.DEAL_CARD);
         dealCard.anchor.set(0.5);
-        dealCard.x = ViewPortSize.HALF_WIDTH + ViewPortSize.HALF_WIDTH / 2 ;
+        dealCard.x = ViewPortSize.HALF_WIDTH + ViewPortSize.HALF_WIDTH / 2 + 40;
         dealCard.y =  ViewPortSize.MAX_HEIGHT * 0.55;
         dealCard.scale.set(0.7);
         this.addChild(dealCard);
+
+      
     }
     private setupButtons(): void {
         this._startButton = PixiFactory.getButton(AtlasKeys.BUTTON_START);
-        this._startButton.x = ViewPortSize.HALF_WIDTH;
-        this._startButton.y = ViewPortSize.MAX_HEIGHT * 0.7;
+        this._startButton.x = ViewPortSize.MAX_WIDTH;
+        this._startButton.y = ViewPortSize.MAX_HEIGHT;
         this.addChild(this._startButton);
 
-        this._optionButton = PixiFactory.getButton(AtlasKeys.BUTTON_CONFIG);
-        this._optionButton.x = ViewPortSize.HALF_WIDTH;
-        this._optionButton.y = ViewPortSize.MAX_HEIGHT * 0.8;
-        this.addChild(this._optionButton);
+        // this._optionButton = PixiFactory.getButton(AtlasKeys.BUTTON_CONFIG);
+        // this._optionButton.x = ViewPortSize.HALF_WIDTH;
+        // this._optionButton.y = ViewPortSize.MAX_HEIGHT * 0.8;
+        // this.addChild(this._optionButton);
 
         this._cashGame = PixiFactory.getButton(AtlasKeys.BUTTON_CASH_GMAE);
         this._cashGame.anchor.set(0, 0)
@@ -126,13 +129,31 @@ export class HomeView extends Container {
         this._kingIcon = PixiFactory.getIcon(AtlasKeys.KING_ICON);
         this._kingIcon.x = 50;
         this._kingIcon.y = 50;
-        this._kingIcon.scale.set(0.09)
+        
         this.addChild(this._kingIcon);
+
+        this._addCashIcon = PixiFactory.getIcon(AtlasKeys.ADDCASH_ICON);
+        this._addCashIcon.x = ViewPortSize.MAX_WIDTH - 250;
+        this._addCashIcon.y = 50;
+        this.addChild(this._addCashIcon);
+
+        this._funIcon = PixiFactory.getIcon(AtlasKeys.FUN_ICON);
+        this._funIcon.x = ViewPortSize.MAX_WIDTH - 150;
+        this._funIcon.y = 50;
+        this.addChild(this._funIcon);
+
         this._bonusIcon = PixiFactory.getIcon(AtlasKeys.BONUS_ICON);
         this._bonusIcon.x = ViewPortSize.MAX_WIDTH - 50;
         this._bonusIcon.y = 50;
-        this._bonusIcon.scale.set(0.5)
+        this._bonusIcon.scale.set(0.3)
         this.addChild(this._bonusIcon);
+
+        this._winPrize = PixiFactory.getButton(AtlasKeys.BUTTON_WIN_PRIZE);
+        this._winPrize.anchor.set(0, 0);
+        this._winPrize.x = ViewPortSize.MAX_WIDTH - 300;
+        this._winPrize.y = ViewPortSize.MAX_HEIGHT - 100;
+        this._winPrize.scale.set(0.5);
+        this.addChild(this._winPrize);
 
     }
 }

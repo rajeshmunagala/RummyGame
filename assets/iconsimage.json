@@ -1,0 +1,118 @@
+{"frames": {
+
+"add-cash.png":
+{
+	"frame": {"x":330,"y":263,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32}
+},
+"bonus.png":
+{
+	"frame": {"x":330,"y":297,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32}
+},
+"cash_game_up.png":
+{
+	"frame": {"x":1,"y":424,"w":150,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":60},
+	"sourceSize": {"w":150,"h":60}
+},
+"cashgame.png":
+{
+	"frame": {"x":381,"y":1,"w":327,"h":130},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":327,"h":130},
+	"sourceSize": {"w":327,"h":130}
+},
+"winprize_up.png":
+{
+	"frame": {"x":1,"y":1,"w":378,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":378,"h":100},
+	"sourceSize": {"w":378,"h":100}
+},
+"fun_coins.png":
+{
+	"frame": {"x":330,"y":331,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32}
+},
+"play_now_up.png":
+{
+	"frame": {"x":330,"y":103,"w":158,"h":47},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":158,"h":47},
+	"sourceSize": {"w":158,"h":47}
+},
+"practice_button.png":
+{
+	"frame": {"x":1,"y":103,"w":327,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":327,"h":130},
+	"sourceSize": {"w":327,"h":130}
+},
+"practice_hover.png":
+{
+	"frame": {"x":153,"y":424,"w":150,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":60},
+	"sourceSize": {"w":150,"h":60}
+},
+"select-button.png":
+{
+	"frame": {"x":1,"y":367,"w":380,"h":55},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":380,"h":55},
+	"sourceSize": {"w":380,"h":55}
+},
+"tournament_button.png":
+{
+	"frame": {"x":1,"y":235,"w":327,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":327,"h":130},
+	"sourceSize": {"w":327,"h":130}
+},
+"tournament_hover.png":
+{
+	"frame": {"x":305,"y":424,"w":150,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":60},
+	"sourceSize": {"w":150,"h":60}
+},
+"user_icon.png":
+{
+	"frame": {"x":364,"y":330,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32}
+}},
+"animations": {
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "iconsimage.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":485},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:63270d2f2cdf6c6b68da344978c7a12b:cea94981a41fd17a03220fb06e9be725:7c09d074edb401ac11cf9065c8dd2e75$"
+}
+}
